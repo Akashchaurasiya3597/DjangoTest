@@ -79,7 +79,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'curdsimple11db',
-        'USER': 'root',
+        'USER': 'test',
         'PASSWORD': 'root'
     }
 }
