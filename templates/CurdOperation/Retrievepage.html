@@ -1,0 +1,70 @@
+<html>
+<head>
+    <title>Retrieve page</title>
+    {% include 'CurdOperation/bootstraplie.html' %}
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md">
+            <form method="POST">
+            {% csrf_token %}
+
+
+                            <table class="table table-bordered table-hover">
+                <thead class="bg-info text-white text-center">
+                <tr>
+                    <th class="text-center">Roll_No</th>
+                    <th class="text-center">First_name</th>
+                    <th class="text-center">Last_name</th>
+                    <th class="text-center">Email</th>
+                    <th class="text-center">School</th>
+                    <th class="text-center">Class</th>
+                    <th class="text-center">Section</th>
+                    <th class="text-center">Telugu</th>
+                    <th class="text-center">Hindi</th>
+                    <th class="text-center">English</th>
+                    <th class="text-center">Maths</th>
+                    <th class="text-center">Science</th>
+                    <th class="text-center">Social</th>
+                    <th class="text-center">Action</th>
+
+
+                </tr>
+                </thead>
+                <tbody>
+                {%  for i in student %}
+                    <tr>
+                    <td class="text-center">{{ i.Roll_number }}</td>
+                    <td class="text-center">{{ i.First_name }}</td>
+                    <td class="text-center">{{ i.Last_name }}</td>
+                    <td class="text-center">{{ i.Email }}</td>
+                    <td class="text-center">{{ i.School_name }}</td>
+                    <td class="text-center">{{ i.Class_name }}</td>
+                    <td class="text-center">{{ i.Section_name }}</td>
+                    <td class="text-center">{{ i.Telugu_marks }}</td>
+                    <td class="text-center">{{ i.Hindi_marks }}</td>
+                    <td class="text-center">{{ i.English_marks }}</td>
+                    <td class="text-center">{{ i.Maths_marks }}</td>
+                    <td class="text-center">{{ i.Science_marks }}</td>
+                    <td class="text-center">{{ i.Social_marks }}</td>
+                    <td class="text-center">
+                        <center>
+                        <a href="/Update/" class="btn btn-success">Update</a>
+                        <a href="/delete/" class="btn btn-danger">Delete</a>
+                        </center>
+                    </td>
+
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+
+
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

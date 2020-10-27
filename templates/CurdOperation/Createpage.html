@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Create page</title>
+    {% include 'CurdOperation/bootstraplie.html' %}
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="offset-md-2 col-md-6">
+            <form method="POST">
+            {% csrf_token %}
+            {{ student }}
+                <center>
+                    <input type="submit" value="Submit" class="btn btn-success">
+                    <input type="reset" value="clear" class="btn btn-danger">
+                </center>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
