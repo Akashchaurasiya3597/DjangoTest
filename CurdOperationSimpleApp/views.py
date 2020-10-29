@@ -8,7 +8,7 @@ from django.contrib import messages
 def home_view(request):
 
     context ={}
-    return render(request,'CurdOperation/Homepage.html',context)
+    return render(request, 'CurdOperation/index.html', context)
 
 
 def Create_view(request):
