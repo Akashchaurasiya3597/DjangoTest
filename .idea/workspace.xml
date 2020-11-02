@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a230fb6-dad7-43c3-9dea-9197a120e690" name="Default Changelist" comment="testing 3">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CurdOperationSimpleApp/api/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/CurdOperationSimpleApp/migrations/0001_initial.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/CurdOperationSimpleApp/migrations/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurdOperationSimpleApp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/CurdOperationSimpleApp/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CurdOperationSimplePro/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/CurdOperationSimplePro/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurdOperationSimpleApp/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/CurdOperationSimpleApp/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurdOperationSimpleApp/api/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/CurdOperationSimpleApp/api/serializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurdOperationSimpleApp/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CurdOperationSimpleApp/api/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurdOperationSimpleApp/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/CurdOperationSimpleApp/api/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CurdOperationSimplePro/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/CurdOperationSimplePro/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/CurdOperation/Homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CurdOperation/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CurdOperationSimplePro/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CurdOperationSimplePro/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +43,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/EVDigital/testproject" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\aws host\DjangoTest\CurdOperationSimpleApp\api" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.views">
     <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -133,6 +140,8 @@
       <workItem from="1603860294034" duration="52000" />
       <workItem from="1603866002149" duration="925000" />
       <workItem from="1603945436158" duration="124000" />
+      <workItem from="1603955601042" duration="4035000" />
+      <workItem from="1604301227132" duration="1466000" />
     </task>
     <task id="LOCAL-00001" summary="testing">
       <created>1603779418307</created>
@@ -169,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603799957778</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="testing 3">
+      <created>1603955785042</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1603955785042</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,19 +194,35 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="testing" />
     <MESSAGE value="testing 2" />
-    <MESSAGE value="testing 3" />
     <MESSAGE value="testing 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing 4" />
+    <MESSAGE value="testing 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing 3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="406" y="11" key="CommitChangelistDialog2" timestamp="1603800159503">
+    <state x="406" y="11" key="CommitChangelistDialog2" timestamp="1604302203589">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
-    <state x="406" y="11" key="CommitChangelistDialog2/0.0.1536.826@0.0.1536.826" timestamp="1603800159503" />
-    <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1603945494588">
+    <state x="406" y="11" key="CommitChangelistDialog2/0.0.1536.826@0.0.1536.826" timestamp="1604302203589" />
+    <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1604302159754">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
-    <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.826@0.0.1536.826" timestamp="1603945494588" />
+    <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.826@0.0.1536.826" timestamp="1604302159754" />
+    <state width="1492" height="93" key="GridCell.Tab.0.bottom" timestamp="1603977390417">
+      <screen x="0" y="0" width="1536" height="826" />
+    </state>
+    <state width="1492" height="93" key="GridCell.Tab.0.bottom/0.0.1536.826@0.0.1536.826" timestamp="1603977390417" />
+    <state width="1492" height="93" key="GridCell.Tab.0.center" timestamp="1603977390416">
+      <screen x="0" y="0" width="1536" height="826" />
+    </state>
+    <state width="1492" height="93" key="GridCell.Tab.0.center/0.0.1536.826@0.0.1536.826" timestamp="1603977390416" />
+    <state width="1492" height="93" key="GridCell.Tab.0.left" timestamp="1603977390416">
+      <screen x="0" y="0" width="1536" height="826" />
+    </state>
+    <state width="1492" height="93" key="GridCell.Tab.0.left/0.0.1536.826@0.0.1536.826" timestamp="1603977390416" />
+    <state width="1492" height="93" key="GridCell.Tab.0.right" timestamp="1603977390416">
+      <screen x="0" y="0" width="1536" height="826" />
+    </state>
+    <state width="1492" height="93" key="GridCell.Tab.0.right/0.0.1536.826@0.0.1536.826" timestamp="1603977390416" />
     <state x="279" y="44" key="SettingsEditor" timestamp="1603796097498">
       <screen x="0" y="0" width="1536" height="826" />
     </state>

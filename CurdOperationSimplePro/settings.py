@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'CurdOperationSimpleApp.apps.CurdoperationsimpleappConfig',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
@@ -77,10 +78,9 @@ WSGI_APPLICATION = 'CurdOperationSimplePro.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'curdsimple11db',
-        'USER': 'root',
-        'PASSWORD': 'root'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+
     }
 }
 
@@ -122,3 +122,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# G mail
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.mailgun.org'
+EMAIL_HOST_USER = 'postmaster@sriharitractors.com'
+EMAIL_HOST_PASSWORD = 'fb788bdb38388a7f310f5b4cb8ce5832-53c13666-17d7ec4c'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+APP_KEY = 'b5e160005cc3669fd1947c550c96cc25-2fbe671d-3f15d3ef'
